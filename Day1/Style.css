@@ -1,15 +1,135 @@
-*{
+/* Basic reset */
+* {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
 }
 
+/* Header */
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+}
 
+header h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
 
+header p {
+    color: #666;
+}
+
+/* Main content */
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Card */
+.task-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.task-card h2 {
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #333;
+}
+
+/* Button */
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: #222;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Task list */
+.task-list {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.task-list h2 {
+    margin-bottom: 15px;
+}
+
+.task-list ul {
+    list-style: none;
+    min-height: 50px;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .task-card {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}

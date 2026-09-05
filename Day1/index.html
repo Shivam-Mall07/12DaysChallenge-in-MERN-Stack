@@ -3,22 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day First</title>
+    <title>My Task Manager</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
-        <h3>My Task Manager</h3>
+        <h1>My Task Manager</h1>
+        <p>Stay organized and get things done.</p>
     </header>
+
     <main>
-        <div>
-            <form action="#">
-                <label for="inp">Add Task</label>
-                <input type="text" name="" id="inp">
-                <br>
-                <button>Button</button>
+        <section class="task-card">
+
+            <h2>Add a Task</h2>
+
+            <form>
+                <label for="task">Task</label>
+
+                <div class="form-row">
+                    <input
+                        type="text"
+                        id="task"
+                        name="task"
+                        placeholder="Enter your task..."
+                    >
+
+                    <button type="submit">Add</button>
+                </div>
             </form>
-        </div>
+
+            <section class="task-list">
+                <h2>Your Tasks</h2>
+
+                <ul>
+                    <!-- Tasks will be added here later with JavaScript -->
+                </ul>
+            </section>
+
+        </section>
     </main>
+
 </body>
 </html>
